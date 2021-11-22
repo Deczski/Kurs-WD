@@ -1,0 +1,12 @@
+.body{
+
+    background-color: beige;
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: x-large;
+
+}

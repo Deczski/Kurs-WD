@@ -1,6 +1,6 @@
-.body{
+body{
 
-    background-color: beige;
+    background-color: gray
 }
 
 #title{
@@ -8,5 +8,55 @@
     align-items: center;
     font-weight: 300;
     font-size: x-large;
+    background-color: whitesmoke;
+    justify-content: center;
+    height: 10vh;
+    border-radius: 10px;
+    font-family: cursive;
+    border: 10px solid;
+}
 
+#subtitle{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+    background-color: lightgray;
+    border-radius: 15px;
+    border: 5px solid; 
+}
+
+#subtitle div img{
+    max-width: 80px;
+    max-height: 80px;
+    border: 3px dotted;
+}
+.gif{
+    height: 10vh;
+    width: 10vw;
+
+}
+
+#content{
+    display: flex;
+    justify-content:center;
+    font-size: xx-large;
+    font-family: fantasy;
+    padding: 5%;
+    gap: 10rem;
+}
+
+#content div img{
+    max-width: 30vw;
+    max-height: 30vh;
+    border: 1px groove;
+}
+
+#footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    border: white 2px inset;
+    font-family: monospace;
+    font-size: 3vh;
 }

@@ -1,4 +1,76 @@
-.root{
+*{box-sizing: border-box;}
+
+:root{
     font-size: 18px;
 }
 
+.cwiartka1{
+    border: solid black 3px;
+    width: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo{
+    border: 3px solid black;
+    width: 500px;
+    height: 200px;
+    background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw1/logo_sprites.jpg);
+}
+.logo:hover{
+    background-position: 0 200px;
+}
+
+.logo:active{
+    background-position: 0 400px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.menu div{
+    border: ridge 1px black;
+
+}
+
+.wykresPion,.wykresPoziom{
+    border:2px solid black;
+    display:flex;
+    justify-content: space-around;
+  }
+  .wykresPion div{
+    border:2px ridge #000;
+    min-width: 10%;
+  }
+  .wykresPion div:nth-child(1){height:2in;}
+  .wykresPion div:nth-child(2){height:2cm;}
+  .wykresPion div:nth-child(3){height:2pc;}
+  .wykresPion div:nth-child(4){height:2mm;}
+  .wykresPion div:nth-child(5){height:2pt;}
+
+  .wykresPoziom{
+    flex-direction: column;
+    min-height:70vh;
+  }
+  .wykresPoziom div{
+    border:2px ridge #000;
+    min-height: 10vh;
+  }
+  .wykresPoziom div:nth-child(1){width:10%;}
+  .wykresPoziom div:nth-child(2){width:10em;}
+  .wykresPoziom div:nth-child(3){width:10vw;}
+  .wykresPoziom div:nth-child(4){width:1cm;}
+  .wykresPoziom div:nth-child(5){width:1vh;}
+
+  .tekst {
+    font-size: 1.5em;
+    color: red;
+    display: flex;
+    justify-content: end;
+}

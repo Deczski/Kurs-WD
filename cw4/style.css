@@ -1,0 +1,99 @@
+*{box-sizing: border-box;}
+body{
+  margin:0;
+  text-align: center;
+}
+
+@media (max-width:720px){
+    .zdjecia div{
+      width: 60vw;
+      height: 60vw;
+      margin-top:10vw;
+    } 
+}
+
+.cookies{
+    display: flex;
+    justify-content: center;
+    position:static;
+    align-items: center;
+    border: 1px dashed;
+}
+
+.zwierzeta{
+    display: flex;
+    justify-content:center;
+    position:sticky;
+    top:0px;
+    align-items: center;
+    border: 3px ridge;
+    background-color: antiquewhite;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: weight 300px; ;
+    z-index: 2;
+}
+
+.zdjecia{
+    border:2px ridge black;
+    min-height: 100vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+    position:relative
+  }
+  
+  .zdjecia div{
+    border:3px ridge black;
+    width: 35vw;
+    height: 35vw;
+  }
+
+.img{
+    width:40vw;
+    height:40vw;
+    position:relative;
+    
+}
+
+.rewers{
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  .rewers:active{
+    opacity:0;
+  }
+
+  .awers1{
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/slon.jpg?raw=true);
+    background-size: cover;
+  }
+
+  .awers2{
+    background-image: url(https://github.com/apietryga/kurs-Front-end/blob/master/materialy/lekcja2/cw2/zebra.jpg?raw=true);
+    background-size: cover;
+  }
+
+  .awers3{
+    background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw2/lew.jpg);
+    background-size: cover;  
+  }
+
+  .awers4{
+    background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw2/nosorozec.jpg);
+    background-size: cover;  
+  }
+
+  .zainteresowany{
+    position: fixed;
+    bottom: 0 !important;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+  }

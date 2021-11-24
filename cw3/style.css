@@ -4,6 +4,10 @@
     font-size: 18px;
 }
 
+.container{
+    border: black solid 3px;
+}
+
 .cwiartka1{
     border: solid black 3px;
     width: auto;
@@ -31,12 +35,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
-.menu div{
-    border: ridge 1px black;
-
+.menu a{
+    border:2px solid #000;
+    /* PROPORCJONALNIE WYPEŁNIJ RODZICA */
+    flex:1;
+    /* WYŚWIETLAMY TEXT NA ŚRODKU */
+    text-align: center;
+    /* POZBYCIE SIĘ POKREŚLENIA Z LINKU */
+    text-decoration: none;
+    /* PRZYWRÓĆ KOLOR RODZICA */
+    color:inherit;
 }
 
 .wykresPion,.wykresPoziom{

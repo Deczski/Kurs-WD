@@ -6,6 +6,7 @@
 
 .container{
     border: black solid 3px;
+    background-color: lightgray;
 }
 
 .cwiartka1{
@@ -24,11 +25,11 @@
     background-image: url(https://raw.githubusercontent.com/apietryga/kurs-Front-end/master/materialy/lekcja2/cw1/logo_sprites.jpg);
 }
 .logo:hover{
-    background-position: 0 200px;
+    background-position: 0 400px;
 }
 
 .logo:active{
-    background-position: 0 400px;
+    background-position: 0 200px;
 }
 
 .menu {
@@ -49,6 +50,12 @@
     color:inherit;
 }
 
+.legendaPion{
+    display: flex;
+    justify-content: space-around;
+}
+
+
 .wykresPion,.wykresPoziom{
     border:2px solid black;
     display:flex;
@@ -64,12 +71,30 @@
   .wykresPion div:nth-child(4){height:2mm;}
   .wykresPion div:nth-child(5){height:2pt;}
 
+
+  .cwiartka3{
+    display: flex;
+    flex-direction: column;
+}
+.dane{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+    .legendaPoziom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
   .wykresPoziom{
     flex-direction: column;
     min-height:70vh;
   }
   .wykresPoziom div{
-    border:2px ridge #000;
+    border:2px ridge #000 ;
     min-height: 10vh;
   }
   .wykresPoziom div:nth-child(1){width:10%;}

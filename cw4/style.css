@@ -68,6 +68,7 @@ body{
     align-items: center;
     transition: 1s;
     transition-delay: 3s;
+    position: absolute;
   }
   .rewers:active{
     transition: .01s;

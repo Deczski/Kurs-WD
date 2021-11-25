@@ -11,16 +11,24 @@ body{
     text-decoration: none;
     color:#000;
     border: 3px ridge #000;
+    border-radius: 10px;
+    background-color: whitesmoke;
   
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
     min-height: 25vh;
+    transition: background-color .5s;
+
   }
+  a:hover{
+    background-color:lightgray;
+  }
+
+
   a i{
-    font: size 1vh;
+    font: size 3vh;
   }
   a b{
     text-decoration:solid;
@@ -30,10 +38,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-      "b3 b1 b2"
-      "b4 b1 b5"
+      "b3 b2 b1"
+      "b4 b5 b1"
     ;
     gap: 5px;
+    font-size: 3vh;
   }
   .wrapperek a:nth-child(1){grid-area:b1;} 
   .wrapperek a:nth-child(2){grid-area:b2;}
@@ -61,5 +70,8 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vh;
     border: 3px black ridge;
-
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
   }
+

@@ -6,8 +6,8 @@ body{
 
 @media (max-width:720px){
     .zdjecia div{
-      width: 60vw;
-      height: 60vw;
+      width: 60vw !important;
+      height: 60vw !important;
       margin-top:10vw;
     } 
 }

@@ -44,11 +44,11 @@ body{
   @media (max-width:720px){
     .wrapperek{
       grid-template-areas: 
-      "b5"
+      "b1"
       "b2" 
       "b3" 
       "b4" 
-      "b1"
+      "b5"
       ;
       grid-template-columns: 1fr ;
         }

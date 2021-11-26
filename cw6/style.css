@@ -1,3 +1,12 @@
+@media (max-width: 720px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -23,9 +32,25 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: ridge 3px black;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfbebe));
+  background: linear-gradient(white, #dfbebe);
+  justify-content: space-evenly;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
 }
 
 .container {
@@ -35,13 +60,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 5%;
   border: ridge 2px black;
   border-radius: 10px;
-  margin-top: 5px;
+  margin: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .content {
@@ -54,6 +80,24 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-left: 1vw;
+}
+
+.polecane h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.polecane div {
+  border: ridge 3px black;
+  border-radius: 10px;
+  margin: 3%;
 }
 
 .articleJpg {
@@ -62,28 +106,79 @@ body {
   min-width: 20vw;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  border: ridge 3px black;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
+  margin: 3%;
+}
+
+.comments {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  margin-left: 5vw;
+}
+
+.comments div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+  border: ridge 3px black;
+  border-radius: 10px;
+  margin: 1%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.comments .pole-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.comments .ikonka {
+  font-size: xx-large;
+}
+
+.comments .pole-oldcomment {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: xx-large;
-  border: ridge 2px black;
+  border: ridge 3px black;
   border-radius: 10px;
 }
 
 .socials a {
   text-decoration: none;
+  border: ridge;
+  border-radius: 10px;
 }
 
-.footer {
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: monospace;
+  border: ridge 3px black;
+  border-radius: 10px;
+  margin: 2%;
 }
 /*# sourceMappingURL=style.css.map */

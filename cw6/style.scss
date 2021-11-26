@@ -1,0 +1,70 @@
+*{box-sizing: border-box;}
+body{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(img/chevron.png);
+}
+
+.logo{
+    background-image: url(img/logo.png);
+    min-height: 10vh;
+    min-width: 10vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:ridge 3px black;
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5%;
+    border: ridge 2px black;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.content{
+    flex:4;
+}
+
+.polecane{
+    flex:1;
+
+}
+
+
+.articleJpg{
+    background-image: url(img/article.jpg);
+    min-height: 20vh;
+    min-width: 20vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.socials{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: xx-large;
+    border: ridge 2px black;
+    border-radius: 10px;
+}
+
+
+
+.socials a{
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+
+}

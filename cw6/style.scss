@@ -78,7 +78,7 @@ a{
 
 .articleJpg{
     background-image: url(img/article.jpg);
-    min-height: 20vh;
+    min-height: 40vh;
     min-width: 20vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -105,10 +105,7 @@ a{
     .pole-input{
         flex:1;
     }
-
-    .usercomment{
-
-       
+     
     }
     .ikonka{
         font-size: xx-large;
@@ -142,5 +139,8 @@ footer{
     font-family:monospace;
     border: $border-stylek;
     border-radius: $borderek-radius;
-    margin:2%;
+    margin-top: 1%;
+    background-color: black;
+    color: white;
+
 }

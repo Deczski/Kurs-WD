@@ -179,6 +179,8 @@ footer {
   font-family: monospace;
   border: ridge 3px black;
   border-radius: 10px;
-  margin: 2%;
+  margin-top: 1%;
+  background-color: black;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
